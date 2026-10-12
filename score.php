@@ -2,7 +2,7 @@
 // Tiny API: GET returns the best score, POST {"score": 123} saves it if it is a new best.
 header('Content-Type: application/json');
 
-$file = __DIR__ . '/../data/score.json';
+$file = __DIR__ . 'score.json';
 
 function read_best($file) {
     if (!is_file($file)) return 0;
