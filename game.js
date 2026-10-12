@@ -203,7 +203,7 @@ function checkGameOver() {
 }
 
 function saveScore(s) {
-  fetch('api/score.php', {
+  fetch('score.php', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ score: s })
