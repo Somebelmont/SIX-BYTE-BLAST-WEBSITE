@@ -1,6 +1,6 @@
 <?php
 // Read the saved best score on the server so the page loads with it already filled in.
-$file = __DIR__ . '/data/score.json';
+$file = __DIR__ . 'score.json';
 $best = 0;
 if (is_file($file)) {
     $json = json_decode(file_get_contents($file), true);
